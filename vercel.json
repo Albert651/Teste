@@ -6,6 +6,14 @@
           "runtime": "vercel-php@0.6.0"
     } 
     },
+
+    "builds": [
+    {
+      "src": "install-deps.sh",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "." }
+    }
+  ],
    
     "routes": [
       {
